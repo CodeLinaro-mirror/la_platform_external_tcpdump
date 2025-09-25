@@ -7,7 +7,7 @@ description: "the TCPdump network dissector"
 third_party {
   license_type: NOTICE
   security {
-    tag: "NVD-CPE2.3:cpe:/a:tcpdump:tcpdump:4.9.3"
+    tag: "NVD-CPE2.3:cpe:/a:tcpdump:tcpdump:4.99.5"
   }
   last_upgrade_date {
     year: 2025
