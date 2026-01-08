@@ -1,28 +1,36 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+
+#ifndef TCPDUMP_CONFIG_H_
+#define TCPDUMP_CONFIG_H_
+
+
 /* Define to 1 if arpa/inet.h declares `ether_ntohost' */
 /* #undef ARPA_INET_H_DECLARES_ETHER_NTOHOST */
+
+/* define if you want to build the instrument functions code */
+/* #undef ENABLE_INSTRUMENT_FUNCTIONS */
 
 /* define if you want to build the possibly-buggy SMB printer */
 /* #undef ENABLE_SMB */
 
-/* Define to 1 if you have the `bpf_dump' function. */
+/* Define to 1 if you have the 'bpf_dump' function. */
 #define HAVE_BPF_DUMP 1
 
 /* capsicum support available */
 /* #undef HAVE_CAPSICUM */
 
-/* Define to 1 if you have the `cap_enter' function. */
+/* Define to 1 if you have the 'cap_enter' function. */
 /* #undef HAVE_CAP_ENTER */
 
-/* Define to 1 if you have the `cap_ioctls_limit' function. */
+/* Define to 1 if you have the 'cap_ioctls_limit' function. */
 /* #undef HAVE_CAP_IOCTLS_LIMIT */
 
 /* Define to 1 if you have the <cap-ng.h> header file. */
 /* #undef HAVE_CAP_NG_H */
 
-/* Define to 1 if you have the `cap_rights_limit' function. */
+/* Define to 1 if you have the 'cap_rights_limit' function. */
 /* #undef HAVE_CAP_RIGHTS_LIMIT */
 
 /* Casper support available */
@@ -31,67 +39,55 @@
 /* Define to 1 if you have the declaration of `ether_ntohost' */
 /* #undef HAVE_DECL_ETHER_NTOHOST */
 
-/* Define to 1 if you have the `ether_ntohost' function. */
+/* Define to 1 if you have the 'ether_ntohost' function. */
 /* #undef HAVE_ETHER_NTOHOST */
 
-/* Define to 1 if you have the `EVP_CIPHER_CTX_new' function. */
+/* Define to 1 if you have the 'EVP_CIPHER_CTX_new' function. */
 #define HAVE_EVP_CIPHER_CTX_NEW 1
 
-/* Define to 1 if you have the `EVP_DecryptInit_ex' function. */
+/* Define to 1 if you have the 'EVP_DecryptInit_ex' function. */
 #define HAVE_EVP_DECRYPTINIT_EX 1
 
-/* Define to 1 if you have the <fcntl.h> header file. */
-#define HAVE_FCNTL_H 1
-
-/* Define to 1 if you have the `fork' function. */
+/* Define to 1 if you have the 'fork' function. */
 #define HAVE_FORK 1
 
-/* Define to 1 if you have the `getopt_long' function. */
+/* Define to 1 if you have the 'getopt_long' function. */
 #define HAVE_GETOPT_LONG 1
 
 /* define if you have getrpcbynumber() */
 #define HAVE_GETRPCBYNUMBER 1
 
-/* Define to 1 if you have the `getservent' function. */
+/* Define to 1 if you have the 'getservent' function. */
 #define HAVE_GETSERVENT 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
-/* Define to 1 if you have the `cap-ng' library (-lcap-ng). */
+/* Define to 1 if you have the 'cap-ng' library (-lcap-ng). */
 /* #undef HAVE_LIBCAP_NG */
 
-/* Define to 1 if you have the `crypto' library (-lcrypto). */
+/* Define to 1 if you have a usable `crypto' library (-lcrypto). */
 #define HAVE_LIBCRYPTO 1
 
-/* Define to 1 if you have the `rpc' library (-lrpc). */
+/* Define to 1 if you have the 'rpc' library (-lrpc). */
 /* #undef HAVE_LIBRPC */
-
-/* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <net/if.h> header file. */
 #define HAVE_NET_IF_H 1
 
-/* Define to 1 if printf(3) does not support the z length modifier. */
-/* #undef HAVE_NO_PRINTF_Z */
-
-/* Define to 1 if you have the `openat' function. */
+/* Define to 1 if you have the 'openat' function. */
 /* #undef HAVE_OPENAT */
-
-/* Define to 1 if you have the <openssl/evp.h> header file. */
-#define HAVE_OPENSSL_EVP_H 1
 
 /* define if the OS provides AF_INET6 and struct in6_addr */
 #define HAVE_OS_IPV6_SUPPORT 1
 
-/* if there's an os_proto.h for this platform, to use additional prototypes */
+/* if there's an os-proto.h for this platform, to use additional prototypes */
 /* #undef HAVE_OS_PROTO_H */
 
-/* Define to 1 if you have the `pcap_breakloop' function. */
+/* Define to 1 if you have the 'pcap_breakloop' function. */
 #define HAVE_PCAP_BREAKLOOP 1
 
-/* Define to 1 if you have the `pcap_create' function. */
+/* Define to 1 if you have the 'pcap_create' function. */
 #define HAVE_PCAP_CREATE 1
 
 /* define if libpcap has pcap_datalink_name_to_val() */
@@ -103,64 +99,64 @@
 /* define if libpcap has pcap_debug */
 /* #undef HAVE_PCAP_DEBUG */
 
-/* Define to 1 if you have the `pcap_dump_flush' function. */
+/* Define to 1 if you have the 'pcap_dump_flush' function. */
 #define HAVE_PCAP_DUMP_FLUSH 1
 
-/* Define to 1 if you have the `pcap_dump_ftell' function. */
+/* Define to 1 if you have the 'pcap_dump_ftell' function. */
 #define HAVE_PCAP_DUMP_FTELL 1
 
-/* Define to 1 if you have the `pcap_dump_ftell64' function. */
+/* Define to 1 if you have the 'pcap_dump_ftell64' function. */
 #define HAVE_PCAP_DUMP_FTELL64 1
 
-/* Define to 1 if you have the `pcap_findalldevs' function. */
+/* Define to 1 if you have the 'pcap_findalldevs' function. */
 #define HAVE_PCAP_FINDALLDEVS 1
 
-/* Define to 1 if you have the `pcap_findalldevs_ex' function. */
+/* Define to 1 if you have the 'pcap_findalldevs_ex' function. */
 /* #undef HAVE_PCAP_FINDALLDEVS_EX */
 
-/* Define to 1 if you have the `pcap_free_datalinks' function. */
+/* Define to 1 if you have the 'pcap_free_datalinks' function. */
 #define HAVE_PCAP_FREE_DATALINKS 1
 
-/* Define to 1 if the system has the type `pcap_if_t'. */
+/* Define to 1 if the system has the type 'pcap_if_t'. */
 #define HAVE_PCAP_IF_T 1
 
-/* Define to 1 if you have the `pcap_lib_version' function. */
+/* Define to 1 if you have the 'pcap_lib_version' function. */
 #define HAVE_PCAP_LIB_VERSION 1
 
 /* define if libpcap has pcap_list_datalinks() */
 #define HAVE_PCAP_LIST_DATALINKS 1
 
-/* Define to 1 if you have the `pcap_open' function. */
+/* Define to 1 if you have the 'pcap_open' function. */
 /* #undef HAVE_PCAP_OPEN */
 
 /* Define to 1 if you have the <pcap/pcap-inttypes.h> header file. */
 #define HAVE_PCAP_PCAP_INTTYPES_H 1
 
-/* Define to 1 if you have the `pcap_setdirection' function. */
+/* Define to 1 if you have the 'pcap_setdirection' function. */
 #define HAVE_PCAP_SETDIRECTION 1
 
-/* Define to 1 if you have the `pcap_set_datalink' function. */
+/* Define to 1 if you have the 'pcap_set_datalink' function. */
 #define HAVE_PCAP_SET_DATALINK 1
 
-/* Define to 1 if you have the `pcap_set_immediate_mode' function. */
+/* Define to 1 if you have the 'pcap_set_immediate_mode' function. */
 #define HAVE_PCAP_SET_IMMEDIATE_MODE 1
 
-/* Define to 1 if you have the `pcap_set_optimizer_debug' function. */
+/* Define to 1 if you have the 'pcap_set_optimizer_debug' function. */
 /* #undef HAVE_PCAP_SET_OPTIMIZER_DEBUG */
 
-/* Define to 1 if you have the `pcap_set_parser_debug' function. */
+/* Define to 1 if you have the 'pcap_set_parser_debug' function. */
 /* #undef HAVE_PCAP_SET_PARSER_DEBUG */
 
-/* Define to 1 if you have the `pcap_set_tstamp_precision' function. */
+/* Define to 1 if you have the 'pcap_set_tstamp_precision' function. */
 #define HAVE_PCAP_SET_TSTAMP_PRECISION 1
 
-/* Define to 1 if you have the `pcap_set_tstamp_type' function. */
+/* Define to 1 if you have the 'pcap_set_tstamp_type' function. */
 #define HAVE_PCAP_SET_TSTAMP_TYPE 1
 
 /* define if libpcap has pcap_version */
 /* #undef HAVE_PCAP_VERSION */
 
-/* Define to 1 if you have the `pfopen' function. */
+/* Define to 1 if you have the 'pfopen' function. */
 /* #undef HAVE_PFOPEN */
 
 /* Define to 1 if you have the <rpc/rpcent.h> header file. */
@@ -169,20 +165,20 @@
 /* Define to 1 if you have the <rpc/rpc.h> header file. */
 /* #undef HAVE_RPC_RPC_H */
 
-/* Define to 1 if you have the `setlinebuf' function. */
+/* Define to 1 if you have the 'setlinebuf' function. */
 #define HAVE_SETLINEBUF 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
 
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
+
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
 
-/* Define to 1 if you have the `strdup' function. */
+/* Define to 1 if you have the 'strdup' function. */
 #define HAVE_STRDUP 1
-
-/* Define to 1 if you have the `strftime' function. */
-#define HAVE_STRFTIME 1
 
 /* Define to 1 if you have the <strings.h> header file. */
 #define HAVE_STRINGS_H 1
@@ -190,16 +186,16 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
-/* Define to 1 if you have the `strlcat' function. */
-/* #undef HAVE_STRLCAT */
+/* Define to 1 if you have the 'strlcat' function. */
+#define HAVE_STRLCAT 1
 
-/* Define to 1 if you have the `strlcpy' function. */
-/* #undef HAVE_STRLCPY */
+/* Define to 1 if you have the 'strlcpy' function. */
+#define HAVE_STRLCPY 1
 
-/* Define to 1 if you have the `strsep' function. */
+/* Define to 1 if you have the 'strsep' function. */
 #define HAVE_STRSEP 1
 
-/* Define to 1 if the system has the type `struct ether_addr'. */
+/* Define to 1 if the system has the type 'struct ether_addr'. */
 /* #undef HAVE_STRUCT_ETHER_ADDR */
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
@@ -208,13 +204,13 @@
 /* Define to 1 if you have the <sys/types.h> header file. */
 #define HAVE_SYS_TYPES_H 1
 
-/* Define to 1 if the system has the type `uintptr_t'. */
+/* Define to 1 if the system has the type 'uintptr_t'. */
 #define HAVE_UINTPTR_T 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
-/* Define to 1 if you have the `vfork' function. */
+/* Define to 1 if you have the 'vfork' function. */
 #define HAVE_VFORK 1
 
 /* define if libpcap has yydebug */
@@ -236,7 +232,7 @@
 #define PACKAGE_NAME "tcpdump"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "tcpdump 4.99.4"
+#define PACKAGE_STRING "tcpdump 4.99.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "tcpdump"
@@ -245,12 +241,17 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "4.99.4"
+#define PACKAGE_VERSION "4.99.6"
 
-/* The size of `void *', as computed by sizeof. */
+/* The size of 'time_t', as computed by sizeof. */
+/* #undef SIZEOF_TIME_T */
+
+/* The size of 'void *', as computed by sizeof. */
 /* #undef SIZEOF_VOID_P */
 
-/* Define to 1 if you have the ANSI C header files. */
+/* Define to 1 if all of the C89 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
 
 /* Define to 1 if sys/ethernet.h declares `ether_ntohost' */
@@ -292,3 +293,7 @@
 /* Define to the type of an unsigned integer type wide enough to hold a
    pointer, if such a type exists, and if the system does not define it. */
 /* #undef uintptr_t */
+
+
+#endif // TCPDUMP_CONFIG_H_
+
