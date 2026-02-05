@@ -18,7 +18,7 @@ third_party {
   identifier {
     type: "Git"
     value: "https://github.com/the-tcpdump-group/tcpdump.git"
-    version: "98632006b9a7783c728acd80b57cc6f3c797c329"
+    version: "05edb60781fde21f1bc2290931d81cc0d61cb129"
     closest_version: "tcpdump-4.99.6"
   }
 }
