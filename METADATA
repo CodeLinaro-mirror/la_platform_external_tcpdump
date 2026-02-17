@@ -7,17 +7,18 @@ description: "the TCPdump network dissector"
 third_party {
   license_type: NOTICE
   security {
-    tag: "NVD-CPE2.3:cpe:/a:tcpdump:tcpdump:4.99.5"
+    tag: "NVD-CPE2.3:cpe:/a:tcpdump:tcpdump:4.99.6"
   }
   last_upgrade_date {
-    year: 2025
+    year: 2026
     month: 1
-    day: 10
+    day: 5
   }
   homepage: "https://www.tcpdump.org/"
   identifier {
     type: "Git"
     value: "https://github.com/the-tcpdump-group/tcpdump.git"
-    version: "tcpdump-4.99.5"
+    version: "05edb60781fde21f1bc2290931d81cc0d61cb129"
+    closest_version: "tcpdump-4.99.6"
   }
 }

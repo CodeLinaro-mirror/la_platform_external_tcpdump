@@ -7,7 +7,7 @@
 # MATRIX_BUILD_LIBPCAP, MATRIX_REMOTE, MATRIX_CC, MATRIX_CMAKE, MATRIX_CRYPTO
 # and MATRIX_SMB.
 
-: "${MATRIX_BUILD_LIBPCAP:=no yes}"
+: "${MATRIX_BUILD_LIBPCAP:=yes no}"
 : "${MATRIX_REMOTE:=no}"
 : "${MATRIX_CC:=gcc clang}"
 : "${MATRIX_CMAKE:=no yes}"
@@ -67,6 +67,7 @@ build_tcpdump() {
     done
 }
 
+run_after_echo git show --oneline -s | cat
 touch .devel
 for CC in $MATRIX_CC; do
     export CC
